@@ -9,8 +9,8 @@ import loggerMiddleware from './middleware/http-logger-middleware.js';
 // Router import
 import forecastRouter from './routes/forecast.js';
 
-const PORT = 5000 || process.env.PORT;
-const HOST = '127.0.0.1' || process.env.HOST;
+const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || '127.0.0.1';
 
 const server = express();
 

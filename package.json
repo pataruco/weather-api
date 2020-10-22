@@ -1,18 +1,16 @@
 {
-  "name": "cuestion-de-tiempo",
+  "name": "express-react-monorepo",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "git@github.com:pataruco/weather-api.git",
+  "author": "Pedro Martin <pataruco@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "yarn nodemon ./index.js"
+  "devDependencies": {
+    "lerna": "^3.22.1"
   },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.6",
-    "winston": "^3.3.3"
-  },
-  "type": "module"
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "private": "true"
 }

@@ -12,5 +12,8 @@
     "client",
     "server"
   ],
-  "private": "true"
+  "private": "true",
+  "scripts": {
+    "heroku-postbuild": "yarn workspace client build"
+  }
 }

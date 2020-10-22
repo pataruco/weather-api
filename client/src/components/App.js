@@ -46,6 +46,12 @@ function App() {
               )}
             </h2>
             <h3>{weatherItem.weather[0].description}</h3>
+            <picture>
+              <img
+                alt={weatherItem.weather[0].description}
+                src={`http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png`}
+              />
+            </picture>
             <h3>Feels like</h3>
             <dl>
               <dt>Day</dt>
